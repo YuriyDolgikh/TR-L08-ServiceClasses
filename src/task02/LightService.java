@@ -6,12 +6,12 @@ public class LightService {
 
     public void switchOnOff(Light light, Scanner scanner) {
         System.out.println("Switching on ? ('true'/'false')");
-        light.setOn(Boolean.parseBoolean(scanner.nextLine()));
+        light.setOn(scanner.nextBoolean());
     }
 
     public void brightness(Light light, Scanner scanner) {
         System.out.println("Input the brightness level: ('0'/'100')");
-        light.setBrightness(Integer.parseInt(scanner.nextLine()));
+        light.setBrightness(scanner.nextInt());
     }
 
     public void printOnOffStatus(Light light) {
